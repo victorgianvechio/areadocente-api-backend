@@ -1,0 +1,49 @@
+{
+  "name": "areadocente-api-backend",
+  "version": "1.0.0",
+  "description": "API Backend",
+  "main": "/build/server.js",
+  "keywords": [],
+  "author": "Victor Gianvechio",
+  "private": true,
+  "copyright": "© 2020, UNIVEM",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/loader.js",
+    "eslint:fix": "eslint --fix src --ext .js",
+    "env": "sucrase-node src/utils/dotenvGenerator.js",
+    "build": "babel src -d build",
+    "start": "node build/server.js",
+    "blob": "sucrase-node examples/blobFile.js",
+    "test:db": "sucrase-node test/db.js"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "chalk": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-request-id": "^1.4.1",
+    "joi": "^14.3.1",
+    "morgan": "^1.10.0",
+    "oracledb": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sucrase": "^3.12.1"
+  }
+}
