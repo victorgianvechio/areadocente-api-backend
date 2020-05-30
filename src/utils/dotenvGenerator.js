@@ -19,7 +19,7 @@ function createFile() {
     // APP
     stream.write(`# App`);
     stream.write('\n\n');
-    stream.write(`APP_URL="http://localhost"`);
+    stream.write(`APP_URL="http://127.0.0.1"`);
     stream.write('\n');
     stream.write(`APP_PORT=8080`);
     stream.write('\n');
@@ -29,7 +29,7 @@ function createFile() {
     // Info
     stream.write(`# Info`);
     stream.write('\n\n');
-    stream.write(`APP_NAME="Área do Professor"`);
+    stream.write(`APP_NAME="Database API Backend"`);
     stream.write('\n');
     stream.write(`COMPANY="UNIVEM"`);
     stream.write('\n');

@@ -40,5 +40,6 @@
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
-  }
+  },
+  "deno.enable": false
 }

@@ -1,16 +1,16 @@
 {
-  "name": "areadocente-api-backend",
+  "name": "database-api-backend",
   "version": "1.0.0",
-  "description": "API Backend",
+  "description": "Database API Backend",
   "main": "/build/server.js",
-  "keywords": [],
-  "author": "Victor Gianvechio",
+  "keywords": ["api", "backend", "database", "oracle"],
+  "author": "Victor Gianvechio <victor.gianvecchio@live.com>",
   "private": true,
-  "copyright": "© 2020, UNIVEM",
-  "license": "ISC",
+  "copyright": "© 2020, Victor Gianvechio",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/victorgianvechio/database-api-backend.git"
   },
   "scripts": {
     "dev": "nodemon src/server.js",
@@ -22,6 +22,11 @@
     "start": "node build/server.js",
     "blob": "sucrase-node examples/blobFile.js",
     "test:db": "sucrase-node test/db.js"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=12.16.1",
+    "npm": ">=6.13.4"
   },
   "dependencies": {
     "app-root-path": "^3.0.0",
